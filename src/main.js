@@ -18,7 +18,8 @@ import {
   Form,
   Input,
   Select,
-  LocaleProvider,
+  // LocaleProvider,
+  ConfigProvider,
   Dropdown,
   DatePicker,
   Badge,
@@ -73,7 +74,8 @@ Vue.use(Menu);
 Vue.use(Form);
 Vue.use(Input);
 Vue.use(Select);
-Vue.use(LocaleProvider);
+// Vue.use(LocaleProvider);
+Vue.use(ConfigProvider);
 Vue.use(Dropdown);
 Vue.use(DatePicker);
 Vue.use(Avatar);
