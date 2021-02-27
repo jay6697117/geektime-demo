@@ -13,5 +13,5 @@ export default { AvatarList0: AvatarList, AvatarListItem0: AvatarListItem, insta
 // Vue.use(AvatarList);
 
 export { AvatarList, AvatarListItem, install };
-// import * as avatar from './components/AvatarList';
-// import { AvatarList, AvatarListItem } from './components/AvatarList';
+// import * as Avatar from './components/AvatarList';
+// import { AvatarList, AvatarListItem } from './components/AvatarList/index';

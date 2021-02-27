@@ -8,13 +8,13 @@ import zhCN from './locale/zhCN';
 import queryString from 'query-string';
 import VueHighlightJS from 'vue-highlightjs';
 
-// import AvatarList0 from './components/AvatarList';
+// import AvatarList0 from './components/AvatarList/index';
 // console.log('AvatarList0 :>> ', AvatarList0);
 
-// import * as AvatarList1 from './components/AvatarList';
+// import * as AvatarList1 from './components/AvatarList/index';
 // console.log('* AvatarList1 :>> ', AvatarList1);
 
-// import { AvatarList, AvatarListItem } from './components/AvatarList';
+// import { AvatarList, AvatarListItem } from './components/AvatarList/index';
 // console.log('AvatarList :>> ', AvatarList);
 // console.log('AvatarListItem :>> ', AvatarListItem);
 
