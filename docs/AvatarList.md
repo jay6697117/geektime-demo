@@ -8,10 +8,7 @@
 // main.js
 import AvatarList from './components/AvatarList/index';
 Vue.use(AvatarList);
-plugins: [
-  ['import', { libraryName: 'ant-design-vue', libraryDirectory: 'es', style: true }] // `style: true` 会加载 less 文件
-];
-这里是按需加载，`style: true` 控制加载 less 文件
+
 ```
 
 - 或者局部引用
