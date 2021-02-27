@@ -4,36 +4,28 @@
 
 - 全局注册
 
-``` js
+```js
 // main.js
-import AvatarList from "./components/AvatarList/index";
-
+import AvatarList from './components/AvatarList/index';
 Vue.use(AvatarList);
+plugins: [
+  ['import', { libraryName: 'ant-design-vue', libraryDirectory: 'es', style: true }] // `style: true` 会加载 less 文件
+];
+这里是按需加载，`style: true` 控制加载 less 文件
 ```
 
 - 或者局部引用
 
-``` vue
-// XXX.vue
-import { AvatarList, AvatarListItem } from "../../components/AvatarList/index";
-
-export default {
-  components: {
-    AvatarList,
-    AvatarListItem
-  }
-};
+```vue
+// XXX.vue import { AvatarList, AvatarListItem } from "../../components/AvatarList/index"; export default { components:
+{ AvatarList, AvatarListItem } };
 ```
 
-## 使用方发
+## 使用方法
 
-``` vue
+```vue
 <template>
-  <avatar-list
-    size="large"
-    :maxLength="3"
-    :excessItemsStyle="{ color: '#f56a00', backgroundColor: '#fde3cf' }"
-  >
+  <avatar-list size="large" :maxLength="3" :excessItemsStyle="{ color: '#f56a00', backgroundColor: '#fde3cf' }">
     <avatar-list-item
       tips="Jake"
       src="https://gw.alipayobjects.com/zos/rmsportal/zOsKZmFRdUtvpqCImOVY.png"
@@ -66,15 +58,15 @@ export default {
 
 ### AvatarList
 
-| 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | ---| --- |
-| size | 头像大小 | number 或者 enum (large、small、mini、default) | default |
-| maxLength | 要显示的最大项目 | number | 0 |
-| excessItemsStyle | 多余的项目风格 | Object | - |
+| 参数             | 说明             | 类型                                           | 默认值  |
+| ---------------- | ---------------- | ---------------------------------------------- | ------- |
+| size             | 头像大小         | number 或者 enum (large、small、mini、default) | default |
+| maxLength        | 要显示的最大项目 | number                                         | 0       |
+| excessItemsStyle | 多余的项目风格   | Object                                         | -       |
 
 ### AvatarListItem
 
-| 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | ---| --- |
-| tips | 头像展示文案 | string | - |
-| src | 头像图片连接 | string | - |
+| 参数 | 说明         | 类型   | 默认值 |
+| ---- | ------------ | ------ | ------ |
+| tips | 头像展示文案 | string | -      |
+| src  | 头像图片连接 | string | -      |
